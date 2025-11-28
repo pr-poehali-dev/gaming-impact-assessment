@@ -15,7 +15,7 @@ const Index = () => {
         <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <Icon name="Gamepad2" className="text-primary" size={32} />
-            <span className="text-2xl font-bold">GameInfo</span>
+            <span className="text-xl md:text-2xl font-bold">КОМПЬЮТЕРНЫЕ ИГРЫ</span>
           </div>
           <div className="hidden md:flex gap-6">
             <button onClick={() => scrollToSection('home')} className="hover:text-primary transition-colors">Главная</button>
@@ -37,10 +37,10 @@ const Index = () => {
                 <Icon name="Sparkles" className="text-primary" size={20} />
                 <span className="text-sm font-medium">Научный подход к пониманию игр</span>
               </div>
-              <h1 className="text-5xl md:text-7xl font-bold leading-tight">
-                Компьютерные игры:<br />
+              <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+                КОМПЬЮТЕРНЫЕ ИГРЫ<br />
                 <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
-                  польза и риски
+                  И ИХ ВЛИЯНИЕ НА МОЛОДЁЖЬ
                 </span>
               </h1>
               <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -475,7 +475,7 @@ const Index = () => {
             <div className="max-w-4xl mx-auto text-center space-y-4">
               <div className="flex items-center justify-center gap-2 text-2xl font-bold">
                 <Icon name="Gamepad2" className="text-primary" size={32} />
-                <span>GameInfo</span>
+                <span>КОМПЬЮТЕРНЫЕ ИГРЫ</span>
               </div>
               <p className="text-muted-foreground">
                 Образовательный портал о влиянии компьютерных игр на детей и подростков
