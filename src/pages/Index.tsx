@@ -389,16 +389,174 @@ const Index = () => {
 
         <section id="recommendations" className="py-20 bg-gradient-to-br from-primary/10 via-secondary/10 to-accent/10">
           <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
+            <div className="max-w-6xl mx-auto">
               <div className="text-center mb-16 animate-fade-in">
                 <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent/20 rounded-full border border-accent/30 mb-4">
                   <Icon name="UserCheck" className="text-accent" size={20} />
-                  <span className="text-sm font-medium">Для родителей</span>
+                  <span className="text-sm font-medium">Рекомендации</span>
                 </div>
-                <h2 className="text-4xl md:text-5xl font-bold mb-4">Рекомендации родителям</h2>
+                <h2 className="text-4xl md:text-5xl font-bold mb-4">Практические советы</h2>
                 <p className="text-lg text-muted-foreground">
-                  Практические советы для здорового баланса
+                  Как сохранить здоровье при работе с компьютером
                 </p>
+              </div>
+
+              <div className="grid lg:grid-cols-2 gap-8 mb-16">
+                <Card className="bg-gradient-to-br from-card to-primary/5 border-primary/30 overflow-hidden">
+                  <div className="h-64 overflow-hidden">
+                    <img 
+                      src="https://cdn.poehali.dev/projects/27e16dbc-bf04-436d-93cd-9d8dfb3d2361/files/086f3442-cc78-436c-900b-9d5fa613019d.jpg"
+                      alt="Правильная работа за компьютером"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <CardContent className="p-8">
+                    <div className="flex items-center gap-3 mb-6">
+                      <div className="w-12 h-12 rounded-lg bg-accent/20 flex items-center justify-center">
+                        <Icon name="User" className="text-accent" size={24} />
+                      </div>
+                      <h3 className="text-3xl font-bold">Для подростков</h3>
+                    </div>
+                    <ul className="space-y-4 text-muted-foreground">
+                      <li className="flex items-start gap-3">
+                        <Icon name="Clock" className="text-primary flex-shrink-0 mt-1" size={20} />
+                        <span><strong>Ограничить время работы.</strong> Максимальная продолжительность непрерывной работы за цифровым устройством без перерыва не должна превышать двух часов.</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <Icon name="Coffee" className="text-primary flex-shrink-0 mt-1" size={20} />
+                        <span><strong>Делать перерывы для физкультминутки.</strong> Время перерыва составляет не менее 15–20 минут, в течение которых рекомендуется делать специальную зрительную гимнастику.</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <Icon name="Eye" className="text-primary flex-shrink-0 mt-1" size={20} />
+                        <span><strong>Периодически фокусировать взгляд на отдалённых объектах.</strong> Каждые 20 минут делать перерыв на 20 секунд и переводить взгляд на объекты, находящиеся вдали (около 4–6 метров).</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <Icon name="Focus" className="text-primary flex-shrink-0 mt-1" size={20} />
+                        <span><strong>Выполнять упражнения для глаз.</strong> Вытянуть руку вперёд, посмотреть сначала на свои пальцы, потом на предмет вдали, а затем на горизонт. Повторить не менее десяти раз.</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <Icon name="Calendar" className="text-primary flex-shrink-0 mt-1" size={20} />
+                        <span><strong>Планировать работу так, чтобы глаза успевали отдыхать.</strong> Переносить некоторые дела с экрана на бумагу.</span>
+                      </li>
+                    </ul>
+                    <Card className="mt-6 bg-accent/10 border-accent/30">
+                      <CardContent className="p-4">
+                        <p className="text-sm text-muted-foreground flex items-start gap-2">
+                          <Icon name="TreePine" className="text-accent flex-shrink-0 mt-0.5" size={16} />
+                          <span>Важно чаще бывать на улице и заниматься спортом. Это добавит физической активности и поможет предупредить развитие психологических расстройств.</span>
+                        </p>
+                      </CardContent>
+                    </Card>
+                  </CardContent>
+                </Card>
+
+                <Card className="bg-gradient-to-br from-card to-secondary/5 border-secondary/30 overflow-hidden">
+                  <div className="h-64 overflow-hidden">
+                    <img 
+                      src="https://cdn.poehali.dev/projects/27e16dbc-bf04-436d-93cd-9d8dfb3d2361/files/8fe86314-50cf-40c6-b2bf-7224ec34b053.jpg"
+                      alt="Упражнения и зарядка"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <CardContent className="p-8">
+                    <div className="flex items-center gap-3 mb-6">
+                      <div className="w-12 h-12 rounded-lg bg-secondary/20 flex items-center justify-center">
+                        <Icon name="Users" className="text-secondary" size={24} />
+                      </div>
+                      <h3 className="text-3xl font-bold">Для родителей</h3>
+                    </div>
+                    <p className="text-muted-foreground mb-4">Чтобы компьютерные игры не навредили здоровью ребёнка, рекомендуется соблюдать следующие правила:</p>
+                    <ul className="space-y-4 text-muted-foreground">
+                      <li className="flex items-start gap-3">
+                        <Icon name="Timer" className="text-secondary flex-shrink-0 mt-1" size={20} />
+                        <span><strong>Делать перерыв</strong> через каждые 20–30 минут работы на компьютере.</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <Icon name="Clock" className="text-secondary flex-shrink-0 mt-1" size={20} />
+                        <span><strong>Ограничить время работы:</strong> 8–10 лет — 45 мин, 11–13 лет — 1 час 30 мин, 14–16 лет — 2 часа 15 мин.</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <Icon name="Moon" className="text-secondary flex-shrink-0 mt-1" size={20} />
+                        <span><strong>Не играть перед сном.</strong> Лучше играть в компьютерные игры в первой половине дня.</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <Icon name="Star" className="text-secondary flex-shrink-0 mt-1" size={20} />
+                        <span><strong>Выбирать игры</strong> по возрасту ребёнка и с смысловыми задачами.</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <Icon name="ArrowUp" className="text-secondary flex-shrink-0 mt-1" size={20} />
+                        <span><strong>Следить за правильной осанкой</strong> в процессе игры на компьютере.</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <Icon name="Maximize2" className="text-secondary flex-shrink-0 mt-1" size={20} />
+                        <span><strong>Контролировать расстояние</strong> от глаз до монитора — не более 60 см.</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <Icon name="Eye" className="text-secondary flex-shrink-0 mt-1" size={20} />
+                        <span><strong>После игры делать гимнастику для глаз.</strong></span>
+                      </li>
+                    </ul>
+                  </CardContent>
+                </Card>
+              </div>
+
+              <Card className="bg-gradient-to-br from-primary/10 to-accent/10 border-primary/30">
+                <CardContent className="p-8">
+                  <div className="flex items-center gap-3 mb-6">
+                    <Icon name="Dumbbell" className="text-primary" size={32} />
+                    <h3 className="text-3xl font-bold">Упражнения для разминки</h3>
+                  </div>
+                  <p className="text-lg text-muted-foreground mb-8">Эти упражнения помогут сохранить здоровье тела. Оптимальная продолжительность утренней зарядки — от 10 до 20 минут.</p>
+                  
+                  <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    {[
+                      {
+                        icon: "MoveVertical",
+                        title: "Наклоны головы",
+                        description: "Встаньте прямо, ноги на ширину плеч. Плавно наклоняйте голову вперёд, назад, вправо и влево или делайте медленные круговые движения. Повторите 8–10 раз."
+                      },
+                      {
+                        icon: "RotateCw",
+                        title: "Круговые движения плечами",
+                        description: "Встаньте прямо, свободно опустите руки вдоль тела и делайте вращательные движения плечами. Сначала «к себе», затем «от себя». Повторите 10 раз в каждую сторону."
+                      },
+                      {
+                        icon: "ArrowDown",
+                        title: "Наклоны туловища вперёд",
+                        description: "Встаньте прямо, ноги на ширине плеч. Плавно наклонитесь вперёд, стараясь коснуться руками пола. Тянитесь грудью к бёдрам. Сделайте 10–12 наклонов."
+                      },
+                      {
+                        icon: "Repeat",
+                        title: "Повороты туловища",
+                        description: "Встаньте прямо, ноги на ширине плеч, руки на поясе. Плавно поворачивайте корпус вправо и влево, нижняя часть тела неподвижна. По 10 поворотов в каждую сторону."
+                      },
+                      {
+                        icon: "Cat",
+                        title: "«Кошка–корова»",
+                        description: "Встаньте на четвереньки. На вдохе прогнитесь в грудном отделе и вытяните шею вверх. На выдохе округлите спину, наклоните голову вниз. Повторите 10–12 раз."
+                      },
+                      {
+                        icon: "Shield",
+                        title: "Планка",
+                        description: "Классическое силовое упражнение улучшает координацию и мышечный корсет. Удерживайтесь в положении планки 30 секунд, постепенно увеличивая время до минуты и более."
+                      }
+                    ].map((exercise, index) => (
+                      <Card key={index} className="bg-card/50 border-primary/20 hover-scale">
+                        <CardContent className="p-6 space-y-3">
+                          <div className="w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center">
+                            <Icon name={exercise.icon as any} className="text-primary" size={24} />
+                          </div>
+                          <h4 className="text-xl font-bold">{exercise.title}</h4>
+                          <p className="text-sm text-muted-foreground leading-relaxed">{exercise.description}</p>
+                        </CardContent>
+                      </Card>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
+
+              <div className="text-center mb-16 mt-20">
+                <h3 className="text-3xl font-bold mb-4">Вопросы и ответы для родителей</h3>
               </div>
 
               <Accordion type="single" collapsible className="space-y-4">
